@@ -1,0 +1,25 @@
+[package]
+name = "rust_file"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+routerify = "3"
+hyper = "0.14.20"
+tokio = { version = "1.21.1", features = [
+    "full",
+] }
+routerify-multipart = "3.0.0"
+routerify-query = "3.0.0"
+serde = { version = "1.0.144", features = [
+    "derive",
+] }
+serde_json = { version = "1.0.85", features = [
+    "std",
+] }
+bytes = "1.2.1"
+uuid = { version = "1.1.2", features = [
+    "v4",
+] }
